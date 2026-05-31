@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Ambassador Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+     <nav class="navbar">
+        <div class="navbar__brand">
+            <img src="../Images/brandLogo.png" alt="Digital Ambassador" class="navbar__brand-logo">
+            <span class="navbar__brand-title">
+                <span class="navbar__brand-title-main">Digital</span>
+                <span class="navbar__brand-title-italic">Ambassador</span>
+            </span>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+            aria-controls="nav-links">
+            <span>☰</span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <div class="nav-links__brand">
+                <img src="../Images/brandLogo.png" alt="Digital Ambassador" class="nav-links__brand-logo">
+                <div class="nav-links__brand-text">
+                    <span class="navbar__brand-title-main">Digital</span>
+                    <span class="navbar__brand-title-italic">Ambassador</span>
+                </div>
+            </div>
+            <a href="">Home</a>
+              <a href="#packages">Packages</a>
+            <a href="#features">Services</a>
+            <a href="#ambassadors">About Us</a>
+            <a href="#contact">Contact Us</a>
+            <a class="whatsapp-btn nav-links__whatsapp"
+                href="https://wa.me/923270011164?text=%D8%A7%D9%84%D8%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%DB%8C%DA%A9%D9%85%20Digital%20Ambassador%20team!%20%F0%9F%91%8B%0A%0A%D9%85%DB%8C%DA%BA%20%D8%A8%D8%DB%8C%D8%B1%D9%88%D9%86%D9%90%20%D9%85%D9%84%DA%A9%20%D9%85%D9%82%DB%8C%D9%85%20%DB%81%D9%88%DA%BA%20%D8%A7%D9%88%D8%B1%20%D8%A2%D9%BE%20%DA%A9%DB%8C%20%D8%B3%D8%B1%D9%88%D8%B3%D8%B2%20%DA%A9%DB%92%20%D8%A8%D8%A7%D8%B1%DB%92%20%D9%85%DB%8C%DA%BA%20%D8%AC%D8%A7%D9%86%D9%86%D8%A7%20%DA%86%D8%A7%DB%81%D8%AA%D8%A7%2F%DA%86%D8%A7%D9%87%D8%AA%DB%8C%20%DB%81%D9%88%DA%BA%DB%94%0A%0A%D8%A8%D8%B1%D8%A7%DB%81%D9%90%20%DA%A9%D8%B1%D9%85%20%D9%85%D8%AC%DA%BE%DB%92%20%D9%81%D8%B1%DB%8C%20%DA%A9%D9%86%D8%B3%D9%84%D9%B9%DB%8C%D8%B4%D9%86%20%DA%A9%DB%92%20%D9%84%DB%8C%DB%92%20%D8%B1%DB%81%D9%86%D9%85%D8%A7%D8%A6%DB%8C%20%D9%81%D8%B1%D9%85%D8%A7%D8%A6%DB%8C%DA%BA%DB%94%0A%0A%D8%B4%DA%A9%D8%B1%DB%8C%DB%81!"
+                target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+                <span class="whatsapp-btn__label" dir="ltr">WhatsApp</span>
+                <span class="whatsapp-btn__icon-wrap" aria-hidden="true">
+                    <svg class="whatsapp-btn__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719">
+                        </path>
+                    </svg>
+                </span>
+            </a>
+        </div>
+
+        <a class="whatsapp-btn"
+            href="https://wa.me/923270011164?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%DB%8C%DA%A9%D9%85%20Digital%20Ambassador%20team!%20%F0%9F%91%8B%0A%0A%D9%85%DB%8C%DA%BA%20%D8%A8%DB%8C%D8%B1%D9%88%D9%86%D9%90%20%D9%85%D9%84%DA%A9%20%D9%85%D9%82%DB%8C%D9%85%20%DB%81%D9%88%DA%BA%20%D8%A7%D9%88%D8%B1%20%D8%A2%D9%BE%20%DA%A9%DB%8C%20%D8%B3%D8%B1%D9%88%D8%B3%D8%B2%20%DA%A9%DB%92%20%D8%A8%D8%A7%D8%B1%DB%92%20%D9%85%DB%8C%DA%BA%20%D8%AC%D8%A7%D9%86%D9%86%D8%A7%20%DA%86%D8%A7%DB%81%D8%AA%D8%A7%2F%DA%86%D8%A7%D9%87%D8%AA%DB%8C%20%DB%81%D9%88%DA%BA%DB%94%0A%0A%D8%A8%D8%B1%D8%A7%DB%81%D9%90%20%DA%A9%D8%B1%D9%85%20%D9%85%D8%AC%DA%BE%DB%92%20%D9%81%D8%B1%DB%8C%20%DA%A9%D9%86%D8%B3%D9%84%D9%B9%DB%8C%D8%B4%D9%86%20%DA%A9%DB%92%20%D9%84%DB%8C%DB%92%20%D8%B1%DB%81%D9%86%D9%85%D8%A7%D8%A6%DB%8C%20%D9%81%D8%B1%D9%85%D8%A7%D8%A6%DB%8C%DA%BA%DB%94%0A%0A%D8%B4%DA%A9%D8%B1%DB%8C%DB%81!"
+            target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+            <span class="whatsapp-btn__label" dir="ltr">WhatsApp</span>
+            <span class="whatsapp-btn__icon-wrap" aria-hidden="true">
+                <svg class="whatsapp-btn__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                        d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719">
+                    </path>
+                </svg>
+            </span>
+        </a>
+     </nav>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Lahore-Based · Trusted</span>
+            <h1 style="overflow-y: hidden;">Your hard work abroad, our protection in Pakistan.</h1>
+            <p>A professional representation team for overseas Pakistanis. Property, parenting, legal matters — everything at your fingertips.</p>
+            <div class="hero-actions">
+                <button class="btn btn-primary btn-large open-modal-btn">Book free Consultant &emsp;></button>
+                <a href="#features" class="btn btn-secondary btn-large">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="analytics" class="metrics-section">
+        <div class="section-container">
+            <div class="metrics-grid">
+    <!-- 1. Percentage Counter -->
+    <div class="metric-card">
+        <h3 class="counter" data-target="100" data-append="%">0</h3>
+        <p>Transparency</p>
+    </div>
+    
+    <!-- 2. Counter with a Plus Sign -->
+    <div class="metric-card">
+        <h3 class="counter" data-target="500" data-prepend="+">0</h3>
+        <p>Clients Served</p>
+    </div>
+
+     <!-- 3. Static Text (No counting animation needed) -->
+    <div class="metric-card">
+        <h3 class="static-value">24/7</h3>
+        <p>Live Updates</p>
+    </div>
+
+</div>
+        </div>
+    </section>
+
+    <section id="packages" class="packages-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Our Service Packages</h2>
+                <p>Choose the perfect plan for your needs.</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3>Basic Protection</h3>
+                    <div class="price-block">
+                        <div>
+                            <span class="original-price">PKR 39,999</span>
+                            <span class="discounted-price">PKR 31,999 <span class="slash-icon"></i></span>\ month</span>
+                        </div>
+                        <span class="discount-badge">20% OFF</span>
+                    </div>
+                    <ul>
+                        <li>Monthly Property view</li>
+                        <li>Live Video report</li>
+                        <li>Utility Bills Protection</li>
+                        <li>Personalized Legal Representation</li>
+                    </ul>
+                    <button class="btn btn-primary open-modal-btn">Buy Now</button>
+                </div>
+                <div class="package-card">
+                    <h3>Premium Care</h3>
+                    <div class="price-block">
+                        <div>
+                            <span class="original-price">PKR 49,999</span>
+                            <span class="discounted-price">PKR 39,999 <span class="slash-icon"></i></span>\ month</span>
+                        </div>
+                        <span class="discount-badge">20% OFF</span>
+                    </div>
+                    <ul>
+                        <li>Monthly 2 times Property view</li>
+                        <li>Palmbing, Electric Cleaning</li>
+                        <li>Parents Medical Checkup</li>
+                        <li>Rental Management</li>
+                        <li>Power of Attorney</li>
+                    </ul>
+                    <button class="btn btn-primary open-modal-btn">Buy Now</button>
+                </div>
+                <div class="package-card">
+                    <h3>Elite Guardian</h3>
+                    <div class="price-block">
+                        <div>
+                            <span class="original-price">PKR 59,999</span>
+                            <span class="discounted-price">PKR 48,999 <span class="slash-icon"></i></span>\ month</span>
+                        </div>
+                        <span class="discount-badge">20% OFF</span>
+                    </div>
+                    <ul>
+                        <li>Property View every weak</li>
+                        <li>Legal Protection(Attorney)</li>
+                        <li>24/7 Protevction of Parents</li>
+                        <li>Groceries supply at Home</li>
+                        <li>Every month video call with Chairman</li>
+                    </ul>
+                    <button class="btn btn-primary open-modal-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Why Join us?</h2>
+                <p>Our trusted services.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-house"></i></div>
+                    <h3>Property Management</h3>
+                    <p>Professional care, rent oversight, and home security support.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Family Support</h3>
+                    <p>Trusted care services for parents and loved ones in Pakistan.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3>Legal Protection</h3>
+                    <p>Attorney support, legal document handling, and dispute defence.</p>
+                </div>
+            </div>
+             <div class="features-grid" style="margin-top: 2rem;">
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-gift"></i></div>
+                    <h3>Premium Benefits</h3>
+                    <p>Special service bundles, care packages, and extra protection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <h3>Performance Tracking</h3>
+                    <p>Regular status updates and progress reports on your service plan.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="fa-regular fa-file"></i></div>
+                    <h3>Documentation</h3>
+                    <p>Secure paperwork management, reports, and record keeping.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ambassadors" class="showcase-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Featured Global Ambassadors LeaderShip</h2>
+                <p>Meet some of our top-tier creators leading the digital evolution landscape.</p>
+            </div>
+            <div class="ambassador-grid">
+                <div class="ambassador-card">
+                    <div class="profile-img-container">
+                    <img src="../Images/ChZainMansha.png" alt="Ch Zain-Ul-Abideen Mansha">
+                    </div>
+                    <div class="card-info">
+                        <h4>Ch Zain Mansha</h4>
+                        <span class="role-badge">Founder - CEO</span>
+                        <p>"My mission is to provide millions of overseas Pakistanis with absolute security, justice, and peace of mind within their homeland. Through modern digital technology and a transparent, legally binding framework, we aim to be the ultimate bridge—ensuring that every expatriate's hard-earned wealth, properties, and the elderly parents they leave behind are permanently protected and cared for."<p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ambassador-card">
+                    <div class="profile-img-container">
+                        <img src="../Images/KashafNaqvi.png" alt="Kashaf Shah Naqvi">
+                    </div>
+                    <div class="card-info">
+                        <h4>Syed Kashif Naqvi</h4>
+                        <span class="role-badge">Co-Founder - Chairman</span>
+                        <p>"Our mission as co-founders is to transform a grand vision into a reliable, everyday reality for overseas Pakistanis. We are dedicated to building a bulletproof operational system rooted in integrity and speed. By merging unyielding legal protection with seamless digital tracking, we ensure that every promise made to our expatriate brothers and sisters is executed with flawless transparency and absolute dedication."</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-container" id="contact">
+        <div class="cta-card">
+            <h2 class="cta-title">Where you are... Your <span class="highlight" style="overflow-y: hidden;">solution is here.</span></h2>
+            
+            <p class="cta-description">
+                Book your free consultation today. We will listen to your requirements and provide a complete plan within 24 hours.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="tel:+923270011164" class="btn-cta btn-gold">
+                    Call Now <i class="fa-solid fa-phone"></i>
+                </a>
+                
+                <a href="https://wa.me/923270011164" target="_blank" class="btn-cta btn-whatsapp">
+                    WhatsApp +92 327 0011164 <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section footer-contact">
+                <h4>Contact Us</h4>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+923270011164">+92 327 0011164</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://wa.me/923270011164" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:info@digitalambassador.com">info@digitalambassador.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Lahore, Pakistan</span>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#features">Services</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#ambassadors">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Digital Ambassador Hub. Built with modern web standards.</p>
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" id="applicationModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Ambassador Application Form</h3>
+                <span class="close-modal-btn" id="closeModalBtn">&times;</span>
+            </div>
+            <form id="ambassadorForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="emailAddr">Email Address</label>
+                    <input type="email" id="emailAddr" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="nicheSelect">Primary Content Focus</label>
+                    <select id="nicheSelect">
+                        <option value="software">Software Engineering / No-Code</option>
+                        <option value="design">UI/UX Design Systems</option>
+                        <option value="ai">Artificial Intelligence & Automation</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
